@@ -38,7 +38,7 @@ public class ValueChanger : MonoBehaviour
         string dataPatch = Application.dataPath;
         dataPatch = dataPatch.Substring(0, dataPatch.Length - 6);
         string clipLocation = dataPatch + AssetDatabase.GetAssetPath(_audioClip.GetInstanceID());
-        libPdInstance.SendMessage("clipLocation", clipLocation);
+        //libPdInstance.SendMessage("clipLocation", PlaySound(audioClip));
         return clipLocation;
     }
 
