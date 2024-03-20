@@ -14,6 +14,11 @@ public class ValueChanger : MonoBehaviour
     public float clipFreq;
     public AudioClip audioClip;
 
+    private void Start()
+    {
+        UpdateAudioFile(audioClip);
+    }
+
     private void Update()
     {
         libPdInstance.SendFloat("clipSpeed", clipSpeed);
@@ -21,6 +26,12 @@ public class ValueChanger : MonoBehaviour
         libPdInstance.SendFloat("clipHighPass", clipHighPass);
         libPdInstance.SendFloat("clipLowPass", clipLowPass);
         libPdInstance.SendFloat("clipFreq", clipFreq);
+    }
+
+    public void UpdateAudioFile(AudioClip clip)
+    {
+        GetComponent<AudioSource>().clip = clip;
+        libPdInstance.Update();
     }
 
     public void DrumHit(float velocity)
