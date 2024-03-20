@@ -26,14 +26,6 @@ public class ValueChanger : MonoBehaviour
     public void DrumHit(float velocity)
     {
         clipVolume = velocity / 100f;
-        libPdInstance.SendMessage("clipLocation", PlaySound(audioClip));
-    }
-
-    public string PlaySound(AudioClip _audioClip)
-    {
-        string dataPatch = Application.dataPath;
-        dataPatch = dataPatch.Substring(0, dataPatch.Length - 6);
-        string clipLocation = dataPatch + "Assets/Sounds/" + audioClip.name + ".wav";
-        return clipLocation;
+        GetComponent<AudioSource>().PlayOneShot(audioClip);
     }
 }
