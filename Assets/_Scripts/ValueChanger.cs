@@ -16,7 +16,7 @@ public class ValueChanger : MonoBehaviour
 
     private void Start()
     {
-        UpdateAudioFile(audioClip);
+        //UpdateAudioFile(audioClip);
     }
 
     private void Update()
@@ -26,6 +26,7 @@ public class ValueChanger : MonoBehaviour
         libPdInstance.SendFloat("clipHighPass", clipHighPass);
         libPdInstance.SendFloat("clipLowPass", clipLowPass);
         libPdInstance.SendFloat("clipFreq", clipFreq);
+        libPdInstance.Update();
     }
 
     public void UpdateAudioFile(AudioClip clip)
