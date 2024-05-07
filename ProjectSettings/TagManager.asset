@@ -6,6 +6,8 @@ TagManager:
   tags:
   - DrumStick
   - Drum
+  - NoteDeath
+  - NoteHit
   layers:
   - Default
   - TransparentFX

@@ -7,12 +7,16 @@ public class ValueChanger : MonoBehaviour
 {
     public LibPdInstance libPdInstance;
 
+    public int index;
+
     public float clipSpeed;
     public float clipVolume;
     public float clipHighPass;
     public float clipLowPass;
     public float clipFreq;
     public AudioClip audioClip;
+    public GameObject hitParticle;
+    public Material drumColor;
 
     private void Start()
     {
@@ -39,5 +43,8 @@ public class ValueChanger : MonoBehaviour
     {
         clipVolume = velocity / 100f;
         GetComponent<AudioSource>().PlayOneShot(audioClip);
+        GameObject particle = Instantiate(hitParticle);
+        particle.transform.position = transform.position + new Vector3(0, 0.05f, 0);
+        particle.GetComponent<ParticleSystemRenderer>().material = drumColor;
     }
 }

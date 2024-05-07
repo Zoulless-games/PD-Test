@@ -55,8 +55,11 @@ public class DrumStick : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Drum"))
         {
-            other.transform.GetComponent<ValueChanger>().DrumHit(velocity.x);
-            other.transform.GetComponent<DrumHitEffect>().SqueezeDrum(velocity.normalized.x / 2);
+            if (GameObject.Find("NoteBoard").GetComponent<NoteBoard>().CheckIfNoteHit(other.transform.GetComponent<ValueChanger>().index))
+            {
+                other.transform.GetComponent<ValueChanger>().DrumHit(velocity.x);
+                other.transform.GetComponent<DrumHitEffect>().SqueezeDrum(velocity.normalized.x / 2);
+            }
         }
     }
 }
