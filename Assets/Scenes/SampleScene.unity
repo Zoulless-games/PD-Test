@@ -1620,7 +1620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639cc70dd989e004faffc3ad21164a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteRestriction: 10
+  noteRestriction: 2
   input: 0
   notePrefab: {fileID: 335455719401923250, guid: 90689d2ea4dca9a498003185757efabb, type: 3}
   timeStamps: []
@@ -2674,7 +2674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639cc70dd989e004faffc3ad21164a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteRestriction: 1
+  noteRestriction: 11
   input: 0
   notePrefab: {fileID: 335455719401923250, guid: 90689d2ea4dca9a498003185757efabb, type: 3}
   timeStamps: []
@@ -2717,7 +2717,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e892e425f6b6774489aa8329f09e980b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a43d50fc79a00c5449d468daa78a552a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0
   m_Pitch: 1
@@ -2816,16 +2816,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1171769296}
+  audioSourceBackground: {fileID: 1756773649}
   lanes:
   - {fileID: 2122324448}
   - {fileID: 2129053954}
   - {fileID: 552033959}
   - {fileID: 710128221}
   - {fileID: 1031562359}
-  songDelayInSeconds: 0
+  songDelayInSeconds: 0.45
+  backgroundSongDelayInSeconds: 4.88
   marginOfError: 0.1
   inputDelayInMilliseconds: 0
-  fileLocation: ACDC-DrumsOnly.mid
+  fileLocation: SevenNation.mid
   noteTime: 1
   noteSpawnY: 7
   noteTapY: -1
@@ -3809,7 +3811,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 51ee30553a7857247918d2fe1c303311, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8d496408266acca42b4aa9c03609071a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3922,7 +3924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d78656f3dd33fa4aab170aeb268dc2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeMusicStarts: 5.45
+  timeBeforeMusicStarts: 0.1555
   musicSource: {fileID: 1756773649}
 --- !u!1 &1820553122
 GameObject:
@@ -4279,6 +4281,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1598533671564319699, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866270583261114983, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cdec5c0aa2d2eba4b8924c91c90468a5, type: 3}
     - target: {fileID: 1866270583261114983, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: drumColor
       value: 
@@ -4292,6 +4302,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4872801935552195892, guid: 04ef83d975098a6419a4eadfa29b611b, type: 3}
     - target: {fileID: 2788604809756763463, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 18f988489ca45554daf5fba6dc6a7761, type: 3}
+    - target: {fileID: 2788604809756763463, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: drumColor
       value: 
       objectReference: {fileID: 2100000, guid: 2c7a09fe8f8ebf044ba3de0bb792bbd2, type: 2}
@@ -4303,6 +4317,10 @@ PrefabInstance:
       propertyPath: hitParticle
       value: 
       objectReference: {fileID: 4872801935552195892, guid: 04ef83d975098a6419a4eadfa29b611b, type: 3}
+    - target: {fileID: 2804203232173941370, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fab494ab161fd464b9c2b6fb134a0e62, type: 3}
     - target: {fileID: 2804203232173941370, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: drumColor
       value: 
@@ -4319,6 +4337,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrumKitRythmDemo
       objectReference: {fileID: 0}
+    - target: {fileID: 4261451870560430301, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868342825058825400, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5279478056308734768, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3
@@ -4327,10 +4353,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.70000005
       objectReference: {fileID: 0}
+    - target: {fileID: 5435831553828702971, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5496263824605338892, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d81aef1d36a41d34d9d4d196efdc3edb, type: 3}
+      objectReference: {fileID: 8300000, guid: cd4784908d232db4cba03ee5f12cc966, type: 3}
     - target: {fileID: 5496263824605338892, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: drumColor
       value: 
@@ -4343,6 +4373,10 @@ PrefabInstance:
       propertyPath: hitParticle
       value: 
       objectReference: {fileID: 4872801935552195892, guid: 04ef83d975098a6419a4eadfa29b611b, type: 3}
+    - target: {fileID: 5599275746059059567, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5746569115228516742, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4387,6 +4421,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6375938522500505944, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: af6abb1a95ae7ea46bdf6fc3b1759aa5, type: 3}
     - target: {fileID: 6375938522500505944, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: drumColor
       value: 
@@ -4448,7 +4486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639cc70dd989e004faffc3ad21164a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteRestriction: 0
+  noteRestriction: 9
   input: 0
   notePrefab: {fileID: 335455719401923250, guid: 90689d2ea4dca9a498003185757efabb, type: 3}
   timeStamps: []
@@ -4470,7 +4508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639cc70dd989e004faffc3ad21164a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteRestriction: 2
+  noteRestriction: 8
   input: 0
   notePrefab: {fileID: 335455719401923250, guid: 90689d2ea4dca9a498003185757efabb, type: 3}
   timeStamps: []

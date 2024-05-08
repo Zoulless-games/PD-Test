@@ -11,8 +11,10 @@ public class SongManager : MonoBehaviour
 {
     public static SongManager Instance;
     public AudioSource audioSource;
+    public AudioSource audioSourceBackground;
     public Lane[] lanes;
     public float songDelayInSeconds;
+    public float backgroundSongDelayInSeconds;
     public double marginOfError; // in seconds
 
     public int inputDelayInMilliseconds;
@@ -81,10 +83,16 @@ public class SongManager : MonoBehaviour
         foreach (var lane in lanes) lane.SetTimeStamps(array);
 
         Invoke(nameof(StartSong), songDelayInSeconds);
+        Invoke(nameof(StartBackgroundSong), backgroundSongDelayInSeconds);
     }
     public void StartSong()
     {
         audioSource.Play();
+    }
+
+    public void StartBackgroundSong()
+    {
+        audioSourceBackground.Play();
     }
     public static double GetAudioSourceTime()
     {

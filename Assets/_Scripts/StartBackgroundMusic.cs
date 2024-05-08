@@ -9,6 +9,6 @@ public class StartBackgroundMusic : MonoBehaviour
 
     void Start()
     {
-        musicSource.PlayDelayed(timeBeforeMusicStarts);
+        //musicSource.PlayDelayed(timeBeforeMusicStarts);
     }
 }
