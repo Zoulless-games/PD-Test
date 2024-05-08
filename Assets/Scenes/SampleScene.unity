@@ -3641,17 +3641,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 655563771699029120, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 64.35509
-      objectReference: {fileID: 0}
     - target: {fileID: 6521124594950139264, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
       propertyPath: m_Name
       value: NoteBoard
-      objectReference: {fileID: 0}
-    - target: {fileID: 6851322030220974546, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 64.35509
       objectReference: {fileID: 0}
     - target: {fileID: 8981127902901430161, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
       propertyPath: m_RootOrder
