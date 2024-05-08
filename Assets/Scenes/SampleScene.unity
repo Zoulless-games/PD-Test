@@ -2371,6 +2371,17 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &803520348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2101264552222377556, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
+  m_PrefabInstance: {fileID: 7789794034847291662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639cc70dd989e004faffc3ad21164a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &849871529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,13 +2655,15 @@ MonoBehaviour:
   audioSource: {fileID: 1171769296}
   audioSourceBackground: {fileID: 1756773649}
   lanes:
+  - {fileID: 803520348}
   - {fileID: 2122324448}
   - {fileID: 2129053954}
   - {fileID: 552033959}
   - {fileID: 710128221}
   - {fileID: 1031562359}
+  - {fileID: 2033018073}
   songDelayInSeconds: 0.45
-  backgroundSongDelayInSeconds: 4.88
+  backgroundSongDelayInSeconds: 4.9
   marginOfError: 0.1
   inputDelayInMilliseconds: 0
   fileLocation: SevenNation.mid
@@ -3478,6 +3491,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+--- !u!114 &2033018073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4284868006241245278, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
+  m_PrefabInstance: {fileID: 7789794034847291662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639cc70dd989e004faffc3ad21164a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2122324448 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2139794268754036205, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
