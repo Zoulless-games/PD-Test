@@ -2543,7 +2543,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a43d50fc79a00c5449d468daa78a552a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 31a41931c435f4245af884874f0f0f2e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0
   m_Pitch: 1
@@ -2649,11 +2649,11 @@ MonoBehaviour:
   - {fileID: 552033959}
   - {fileID: 710128221}
   - {fileID: 1031562359}
-  songDelayInSeconds: 0.45
-  backgroundSongDelayInSeconds: 4.88
+  songDelayInSeconds: 0
+  backgroundSongDelayInSeconds: 5.45
   marginOfError: 0.1
   inputDelayInMilliseconds: 0
-  fileLocation: SevenNation.mid
+  fileLocation: Badguymidi.mid
   noteTime: 1
   noteSpawnY: 7
   noteTapY: -1
@@ -3316,7 +3316,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8d496408266acca42b4aa9c03609071a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8bd7284c5bafbe3499f37992d6732182, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3617,6 +3617,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 223719422612724543, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
+      propertyPath: noteRestriction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503033364454920986, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
+      propertyPath: noteRestriction
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681849132091416821, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
+      propertyPath: noteRestriction
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2139794268754036205, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
+      propertyPath: noteRestriction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221387332746247790, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
+      propertyPath: noteRestriction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6521124594950139264, guid: bcc7e51b2c2cfbc4098d04634ef699d4, type: 3}
       propertyPath: m_Name
       value: NoteBoard
