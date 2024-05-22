@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Credit https://assetstore.unity.com/packages/tools/audio/drywetmidi-222171
 public class Lane : MonoBehaviour
 {
     public Melanchall.DryWetMidi.MusicTheory.NoteName noteRestriction;
@@ -21,6 +22,7 @@ public class Lane : MonoBehaviour
     {
         
     }
+
     public void SetTimeStamps(Melanchall.DryWetMidi.Interaction.Note[] array)
     {
         foreach (var note in array)
@@ -32,6 +34,7 @@ public class Lane : MonoBehaviour
             }
         }
     }
+
     // Update is called once per frame
     void Update()
     {

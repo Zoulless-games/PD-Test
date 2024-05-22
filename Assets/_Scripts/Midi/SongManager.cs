@@ -7,6 +7,7 @@ using System.IO;
 using UnityEngine.Networking;
 using System;
 
+//Credit https://assetstore.unity.com/packages/tools/audio/drywetmidi-222171
 public class SongManager : MonoBehaviour
 {
     public static SongManager Instance;
@@ -74,6 +75,7 @@ public class SongManager : MonoBehaviour
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();
     }
+
     public void GetDataFromMidi()
     {
         var notes = midiFile.GetNotes();
@@ -85,6 +87,7 @@ public class SongManager : MonoBehaviour
         Invoke(nameof(StartSong), songDelayInSeconds);
         Invoke(nameof(StartBackgroundSong), backgroundSongDelayInSeconds);
     }
+
     public void StartSong()
     {
         audioSource.Play();

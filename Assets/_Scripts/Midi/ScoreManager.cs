@@ -116,6 +116,7 @@ public class ScoreManager : MonoBehaviour
         comboOverTime.Add(comboCount);
         accuracyOverTime.Add(accuracy);
     }
+
     public void Miss(GameObject drum)
     {
         notesMissed++;

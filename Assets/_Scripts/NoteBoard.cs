@@ -43,7 +43,8 @@ public class NoteBoard : MonoBehaviour
             Destroy(notesInHitArea[noteIndex]);
             notesInHitArea.RemoveAt(noteIndex);
             return true;
-        } return false;
+        }
+        return false;
     }
 
     public IEnumerator SpawnNote(int noteIndex)
