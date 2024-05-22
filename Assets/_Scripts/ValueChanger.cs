@@ -17,6 +17,7 @@ public class ValueChanger : MonoBehaviour
     public AudioClip audioClip;
     public GameObject hitParticle;
     public Material drumColor;
+    public GameObject note;
 
     private void Start()
     {

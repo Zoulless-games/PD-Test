@@ -93,6 +93,9 @@ public class SongManager : MonoBehaviour
     public void StartBackgroundSong()
     {
         audioSourceBackground.Play();
+        ScoreManager.instance.songDuration = audioSourceBackground.clip.length;
+        ScoreManager.instance.songStarted = true;
+        ScoreManager.instance.SetTime();
     }
     public static double GetAudioSourceTime()
     {

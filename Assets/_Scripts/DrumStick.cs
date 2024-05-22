@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DrumStick : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class DrumStick : MonoBehaviour
     public Transform velocityCalculationPoint2;
     private Vector3 previousPos1;
     private Vector3 previousPos2;
+    public float hepticFeedbackAmplitude;
+    public float hepticFeedbackDuration;
+    public XRBaseController controller;
 
     private void Start()
     {
@@ -59,6 +64,8 @@ public class DrumStick : MonoBehaviour
             {
                 other.transform.GetComponent<ValueChanger>().DrumHit(velocity.x);
                 other.transform.GetComponent<DrumHitEffect>().SqueezeDrum(velocity.normalized.x / 2);
+                ScoreManager.instance.Hit(Vector3.Distance(new Vector3(0, 0, other.transform.GetComponent<ValueChanger>().note.transform.position.z), new Vector3(0, 0, other.transform.position.z)), other.gameObject);
+                controller.SendHapticImpulse(hepticFeedbackAmplitude, hepticFeedbackDuration);
             }
         }
     }

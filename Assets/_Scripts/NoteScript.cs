@@ -20,6 +20,7 @@ public class NoteScript : MonoBehaviour
             {
                 drum.GetComponent<ValueChanger>().DrumHit(index);
                 GameObject.Find("NoteBoard").GetComponent<NoteBoard>().CheckIfNoteHit(index);
+                ScoreManager.instance.Hit(Vector3.Distance(new Vector3(0, 0, drum.transform.GetComponent<ValueChanger>().note.transform.position.z), new Vector3(0, 0, drum.transform.position.z)), drum.gameObject);
                 drum = null;
             }
         }
@@ -36,6 +37,7 @@ public class NoteScript : MonoBehaviour
         {
             if(autoPlay) drum = other.transform.parent.gameObject;
             GameObject.Find("NoteBoard").GetComponent<NoteBoard>().AddNoteToHitArea(gameObject);
+            other.transform.parent.GetComponent<ValueChanger>().note = gameObject;
         }
     }
 
@@ -44,6 +46,8 @@ public class NoteScript : MonoBehaviour
         if (other.CompareTag("NoteHit"))
         {
             GameObject.Find("NoteBoard").GetComponent<NoteBoard>().RemoveNoteToHitArea(gameObject);
+            ScoreManager.instance.Miss(other.transform.parent.gameObject);
+            other.transform.parent.GetComponent<ValueChanger>().note = null;
         }
     }
 }
