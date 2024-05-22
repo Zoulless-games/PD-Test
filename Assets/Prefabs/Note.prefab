@@ -150,4 +150,4 @@ MonoBehaviour:
   index: 0
   margin: 0.02
   drum: {fileID: 0}
-  autoPlay: 1
+  autoPlay: 0
