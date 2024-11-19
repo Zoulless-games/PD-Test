@@ -4536,6 +4536,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 1866270583261114983, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: libPdInstance
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788604809756763463, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: libPdInstance
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804203232173941370, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: libPdInstance
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3209998930870461704, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: m_Name
       value: DrumKitRythmDemo
@@ -4547,6 +4559,10 @@ PrefabInstance:
     - target: {fileID: 5279478056308734768, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496263824605338892, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: libPdInstance
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5746569115228516742, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: m_RootOrder
@@ -4596,6 +4612,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6375938522500505944, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: libPdInstance
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6442349610510996146, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.1
@@ -4608,7 +4628,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8841340992623111888, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: libPdInstance
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188070286829808547, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+      propertyPath: libPdInstance
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6900635633847040702, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+    - {fileID: 857391905530244144, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+    - {fileID: 571433135365561883, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+    - {fileID: 2145885168560843276, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+    - {fileID: 2098510412205421498, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+    - {fileID: 5217212188204025191, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
+    - {fileID: 3113061741111613904, guid: b01ba026f42a1b44784f5b2cff532742, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
