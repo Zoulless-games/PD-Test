@@ -16,6 +16,8 @@ public class DrumStick : MonoBehaviour
     public float hepticFeedbackDuration;
     public XRBaseController controller;
 
+    public bool freestyle;
+
     private void Start()
     {
         previousPos1 = velocityCalculationPoint1.position;
@@ -60,6 +62,13 @@ public class DrumStick : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Drum"))
         {
+            if (freestyle)
+            {
+                other.transform.GetComponent<ValueChanger>().DrumHit(velocity.x);
+                other.transform.GetComponent<DrumHitEffect>().SqueezeDrum(velocity.normalized.x / 2);
+                controller.SendHapticImpulse(hepticFeedbackAmplitude, hepticFeedbackDuration);
+            }
+            if (GameObject.Find("NoteBoard") == null) return;
             if (GameObject.Find("NoteBoard").GetComponent<NoteBoard>().CheckIfNoteHit(other.transform.GetComponent<ValueChanger>().index))
             {
                 other.transform.GetComponent<ValueChanger>().DrumHit(velocity.x);
