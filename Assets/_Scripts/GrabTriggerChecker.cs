@@ -7,6 +7,8 @@ public class GrabTriggerChecker : MonoBehaviour
     public InputDeviceCharacteristics controllerCharacteristics; // Specify Left/Right controller
     private InputDevice controllerDevice;
     public bool isGripPressed;
+    private bool hasDrum;
+    private GameObject drum;
 
     void Start()
     {
@@ -27,14 +29,24 @@ public class GrabTriggerChecker : MonoBehaviour
             {
                 Debug.Log("Grab trigger is pressed!");
             }
+            else drum = null;
         }
+
+        MoveDrum();
     }
 
     public void OnTriggerStay(Collider other)
     {
-        if (other.transform.CompareTag("Drum") && isGripPressed)
+        if (other.transform.CompareTag("Drum") && isGripPressed && drum == null)
         {
-            other.transform.position = transform.position;
+            drum = other.gameObject;
         }
+    }
+
+    public void MoveDrum()
+    {
+        if (drum == null) return;
+        drum.transform.position = transform.position;
+        drum.transform.rotation = transform.rotation;
     }
 }

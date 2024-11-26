@@ -58,7 +58,7 @@ public class DrumStick : MonoBehaviour
         velocity = new Vector2(velocityX, velocityY);
     }
 
-    public void OnCollisionEnter(Collision other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Drum"))
         {
