@@ -12,9 +12,11 @@ public class ValueChanger : MonoBehaviour
     public GameObject hitParticle;
     public Material drumColor;
     public GameObject note;
+    public GameObject drumColorObj;
 
     private void Start()
     {
+        drumColorObj.GetComponent<Renderer>().material = drumColor;
     }
 
     public void UpdateAudioFile(AudioClip clip)
