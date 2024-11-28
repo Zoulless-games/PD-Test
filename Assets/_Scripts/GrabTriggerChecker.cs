@@ -40,7 +40,7 @@ public class GrabTriggerChecker : MonoBehaviour
     {
         if (other.transform.CompareTag("Drum") && isGripPressed && drum == null)
         {
-            drum = other.gameObject;
+            drum = other.transform.root.transform.gameObject;
         }
     }
 

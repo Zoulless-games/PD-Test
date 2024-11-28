@@ -8,6 +8,7 @@ TagManager:
   - Drum
   - NoteDeath
   - NoteHit
+  - DrumPickup
   layers:
   - Default
   - TransparentFX

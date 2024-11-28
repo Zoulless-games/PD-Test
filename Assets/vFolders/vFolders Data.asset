@@ -20,29 +20,29 @@ MonoBehaviour:
     - d4a5323ccd6122b4787a7f5c1e311d93
     - 0564d9c2a4da7a04eb20cdfed9405cfe
     values:
-    - iconNameOrGuid: cs Script Icon
+    - iconNameOrGuid: 
       colorIndex: 9
       isIconRecursive: 0
-      isColorRecursive: 0
-    - iconNameOrGuid: Prefab Icon
+      isColorRecursive: 1
+    - iconNameOrGuid: 
       colorIndex: 6
       isIconRecursive: 0
       isColorRecursive: 1
-    - iconNameOrGuid: SceneAsset Icon
+    - iconNameOrGuid: 
       colorIndex: 3
       isIconRecursive: 0
-      isColorRecursive: 0
-    - iconNameOrGuid: AudioClip Icon
+      isColorRecursive: 1
+    - iconNameOrGuid: 
       colorIndex: 8
       isIconRecursive: 0
-      isColorRecursive: 0
-    - iconNameOrGuid: Material Icon
+      isColorRecursive: 1
+    - iconNameOrGuid: 
       colorIndex: 5
       isIconRecursive: 0
-      isColorRecursive: 0
+      isColorRecursive: 1
   bookmarks:
-  - guid: 0564d9c2a4da7a04eb20cdfed9405cfe
-  - guid: 735496cd6d6b3f846a9d83bc0de33ea0
+  - guid: d3cdf295a95055c40a37a4801b8a964b
+  - guid: d4a5323ccd6122b4787a7f5c1e311d93
   - guid: b2e2fa6ed61427049a569f47797200d1
   - guid: ddcc3373e274c464c99556e862e65f00
   - guid: 00000000000000001000000000000000

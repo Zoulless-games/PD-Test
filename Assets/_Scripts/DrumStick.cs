@@ -15,6 +15,8 @@ public class DrumStick : MonoBehaviour
     public float hepticFeedbackAmplitude;
     public float hepticFeedbackDuration;
     public XRBaseController controller;
+    public float hitDelay;
+    private bool canHit = true;
 
     public bool freestyle;
 
@@ -27,6 +29,11 @@ public class DrumStick : MonoBehaviour
     public void Update()
     {
         CalculateVelocity();
+    }
+
+    public void HitDelayTrigger()
+    {
+        canHit = true;
     }
 
     public float CalculateVelocityAtHitPoint(Transform pos)
@@ -60,10 +67,12 @@ public class DrumStick : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Drum"))
+        if (other.gameObject.CompareTag("Drum") && canHit)
         {
             if (freestyle)
             {
+                canHit = false;
+                Invoke(nameof(HitDelayTrigger), hitDelay);
                 other.transform.GetComponent<ValueChanger>().DrumHit(velocity.x);
                 other.transform.GetComponent<DrumHitEffect>().SqueezeDrum(velocity.normalized.x / 2);
                 controller.SendHapticImpulse(hepticFeedbackAmplitude, hepticFeedbackDuration);
@@ -71,6 +80,8 @@ public class DrumStick : MonoBehaviour
             if (GameObject.Find("NoteBoard") == null) return;
             if (GameObject.Find("NoteBoard").GetComponent<NoteBoard>().CheckIfNoteHit(other.transform.GetComponent<ValueChanger>().index))
             {
+                canHit = false;
+                Invoke(nameof(HitDelayTrigger), hitDelay);
                 other.transform.GetComponent<ValueChanger>().DrumHit(velocity.x);
                 other.transform.GetComponent<DrumHitEffect>().SqueezeDrum(velocity.normalized.x / 2);
                 ScoreManager.instance.Hit(Vector3.Distance(new Vector3(0, 0, other.transform.GetComponent<ValueChanger>().note.transform.position.z), new Vector3(0, 0, other.transform.position.z)), other.gameObject);
