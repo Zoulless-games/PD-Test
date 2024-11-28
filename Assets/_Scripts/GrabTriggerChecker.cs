@@ -36,7 +36,7 @@ public class GrabTriggerChecker : MonoBehaviour
         MoveDrum();
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnCollisonStay(Collision other)
     {
         if (other.transform.CompareTag("Drum") && isGripPressed && drum == null)
         {
