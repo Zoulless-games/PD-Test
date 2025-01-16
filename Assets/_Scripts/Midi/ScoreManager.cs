@@ -47,6 +47,7 @@ public class ScoreManager : MonoBehaviour
             instance = this;
         } else Destroy(gameObject);
     }
+
     private void Update()
     {
         panel.transform.LookAt(Camera.main.transform);

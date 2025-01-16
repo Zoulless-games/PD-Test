@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 4eafde16c746a9a4b9d6ebd47fb0ddb7
-  - enabled: 1
-    path: Assets/Scenes/FreestyleDrums.unity
-    guid: 1fcbf965cde52be498edfe7754a030e1
+    path: Assets/Scenes/Emil.unity
+    guid: d39762df692efb94db24d13423681f66
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a7df129e87aac4343904594331400ee0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b93715a2c8e79824b9e18b2ebbd97871, type: 2}
